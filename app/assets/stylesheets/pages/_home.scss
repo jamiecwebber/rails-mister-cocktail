@@ -1,1 +1,50 @@
 // Specific CSS for your home-page
+body {
+	text-align: center;
+	background-image: asset-url('bar_background.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	color: black;
+}
+
+h1 {
+	font: $headers-font;
+	font-size: 6vw;
+	color: black;
+	margin-bottom: 20px;
+	text-outline: 1px solid $neon-purple;
+
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.card {
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.5);
+	color: $neon-purple;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	height: 100px;
+	width: 160px;
+	transition-property: width, height, padding;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-out;
+	&:hover {
+		padding: 10px;
+		height: 95px;
+		width: 152px;
+	}
+}
+
+.card-area {
+	height: 22vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}

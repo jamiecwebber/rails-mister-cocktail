@@ -1,0 +1,16 @@
+
+
+	<div class='row'>
+		<% @cocktails.each do |cocktail| %>
+			<div class='col-sm-4 col-md-3'>
+				<div class='card-area'>
+					<a href='/cocktails/<%= cocktail.id %>'>
+					<div class='card' style='box-shadow: 0px -3px 70px rgb(<%= (rand()/2+0.5)*255 %>, <%= (rand()/2+0.5)*255 %>,<%= (rand()/2+0.5)*255 %> ); 
+					transform: rotate(<%= (rand() - 0.5)*8 %>deg)'><%= cocktail.name %></div>
+					</a>
+				</div>
+			</div>
+		<% end %>
+	</div>
+
+

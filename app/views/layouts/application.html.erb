@@ -14,9 +14,14 @@
   </head>
 
   <body>
-    <%= yield %>
 
-    <%= javascript_include_tag "application" %> 
+  <a href='/'>
+  <h1 style='text-shadow: 1px 1px 1px #fef2ff, 0px -5px 30px rgb(<%= (rand()/2+0.5)*255 %>, <%= (rand()/2+0.5)*255 %>,<%= (rand()/2+0.7)*255 %>);'>Cocktail House</h1></a>
+
+    <div class='container'>
+      <%= yield %>
+    </div>
+
     <%= javascript_pack_tag "application" %>    
   </body>
 </html>

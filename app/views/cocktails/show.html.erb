@@ -1,0 +1,17 @@
+
+<div class="cocktail-display-area">
+	<div class='cocktail-card-area'>
+		<div class="cocktail-card" style='box-shadow: 0px -3px 70px rgb(<%= (rand()/2+0.5)*255 %>, <%= (rand()/2+0.5)*255 %>,<%= (rand()/2+0.5)*255 %> ); 
+					transform: rotate(<%= (rand() - 0.5)*8 %>deg)'>
+			<p><%= @cocktail.name %></p>
+
+			<% @cocktail.doses.each do |dose| %>
+				<%= "#{dose.ingredient.name} - #{dose.description}" %>
+			<% end %>
+		</div>
+	</div>
+	<div class="cocktail-info">
+		<p>blah</p>
+	</div>
+</div>
+
