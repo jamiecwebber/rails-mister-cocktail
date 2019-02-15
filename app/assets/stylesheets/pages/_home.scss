@@ -21,6 +21,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.card-container{
+	margin: 0 15vw;
+}
+
 .card {
 	font-size: 20px;
 	background-color: rgba(0,0,0,0.5);
@@ -47,4 +51,10 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
+}
+
+.newCocktailSidebar {
+	position: absolute;
+	z-index: 1;
+	left: -150px
 }
