@@ -1,6 +1,13 @@
 .css-container {
 }
 
+a {
+	color: $neon-purple;
+	&:hover {
+		color: $neon-purple;
+	}
+}
+
 .cocktail-display-area {
 
 	width: 75%;

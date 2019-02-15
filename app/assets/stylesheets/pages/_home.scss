@@ -13,7 +13,12 @@ h1 {
 	font-size: 6vw;
 	color: black;
 	margin-bottom: 20px;
-	text-outline: 1px solid $neon-purple;
+}
+
+h2 {
+	font: $headers-font;
+	font-size: 4vw;
+	color: black;
 
 }
 
@@ -84,4 +89,11 @@ a:hover {
 	height: 70vh;
 	width: 200px;
 	margin: 10px;
+}
+
+.formContainer {
+	width: 70%;
+	min-width: 200px;
+	margin: 0 auto;
+
 }

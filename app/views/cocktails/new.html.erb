@@ -1,6 +1,7 @@
-<h1>Make a new cocktail</h1>
-
-<%= simple_form_for @cocktail do |f| %>
-	<%= f.input :name %>
-	<%= f.submit %>
-<% end %>
+<h2 style='text-shadow: 1px 1px 1px #fef2ff, 0px -5px 30px rgb(<%= (rand()/2+0.5)*255 %>, <%= (rand()/2+0.5)*255 %>,<%= (rand()/2+0.7)*255 %>);'>Make a new cocktail</h2>
+<div class="formContainer">
+	<%= simple_form_for @cocktail do |f| %>
+		<%= f.input :name %>
+		<%= f.submit %>
+	<% end %>
+</div>
