@@ -55,6 +55,33 @@ a:hover {
 
 .newCocktailSidebar {
 	position: absolute;
+	left: -150px;
+	width: 200px;
 	z-index: 1;
-	left: -150px
+	transition: left 0.6s ease;
+	&:hover {
+		left: -25px;
+	}
+}
+
+.sidebarImage {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+.sidebarMenu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 80vh;
+	width: 200px;
+	z-index: 3;
+}
+
+.clickbox {
+	height: 70vh;
+	width: 200px;
+	margin: 10px;
 }
